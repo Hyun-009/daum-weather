@@ -1,0 +1,123 @@
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+html {
+    font-family: "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
+    /* line-height: 1; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, il{
+    list-style-type: none;
+}
+#container{
+    background-color: #F2F4F7;
+    width: 900px;
+    padding: 50px;
+}
+.dep1 {
+    display: flex; 
+    justify-content: space-between;
+}
+.dep1 h1 span{
+    padding-left: 6px;
+}
+.dep1-list{
+    display: flex;
+}
+.dep1-list li{
+    padding: 20px 4px 16px 4px;
+}
+.depth{
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.dep2-list{
+    display: flex;
+    gap: 39px;
+    width: 776px;
+    padding-left: 30px;
+    height: 56px;
+    align-items: center;
+    text-align: center;
+}
+.dep2-list li{
+    position: relative;
+}
+.dep2-list .t-ico a::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(255, 56, 56);
+}
+.dep2-list li a::before{
+    
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1.5px;
+    background-color: #000000;
+    bottom: -18px;
+    left:calc(50% - 30px);
+    transform: scaleX(0%);
+    transition: transform .1s ease-in;
+}
+.dep2-list li a:hover::before{
+    transform: scaleX(100%);
+}
+.dep3{
+    padding: 30px;
+}
+.location-weader{
+    gap: 28px;
+    display: flex;justify-content: center;
+}
+.weather-list {
+    gap: 5px;
+    display: flex;
+
+}
+.degree{
+    font-size: 47.4px;
+    font-weight: bold;
+}
+.status-wrap{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.weather-list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(0, 0, 0, 0.08) ;
+    width: 70px;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.weather-list li img{
+    max-width: 26px;
+    max-height: 26px;
+}
+
+
+
+
+
+.weather-list li .txt3{
+    font-size: 18px;
+    font-weight: bold;
+}
